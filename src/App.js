@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import './styles.css';
+import Home from './Home';
+import AppetiserTraining from './AppetiserTraining';
+import DrinkTraining from './DrinkTraining';
+import OABTraining from './OABTraining';
+import FoodTraining from './FoodTraining';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="app">
+        <h1>Alchemist Menu Training</h1>
+        <nav>
+          <ul>
+         
+            <li className="navi">
+    
+              <Link to="/appetiser-training">Appetisers</Link>
+              <Link to="/drink-training">Drinks</Link>
+              <Link to="/food-training">Food</Link>
+              <Link to="/on-a-bowl-training">On A Bowl</Link>
+            </li>
+          </ul>
+        </nav>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/appetiser-training" element={<AppetiserTraining />} />
+          <Route path="/drink-training" element={<DrinkTraining />} />
+          <Route path="/on-a-bowl-training" element={<OABTraining />} />
+           <Route path="/food-training" element={<FoodTraining />} />
+        </Routes>
+      </div>
+
+      
+    </Router>
   );
-}
+};
 
 export default App;

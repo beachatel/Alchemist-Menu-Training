@@ -1,0 +1,236 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1rem;
+}
+
+.app {
+  text-align: center;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  color: #007bff;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.img-container{
+  margin-top: 10vh;
+
+}
+
+/* make appetiser aCard drink dCard food fCard versions for each set of params */
+
+.Acard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.Dcard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+}
+.Fcard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.OABcard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.Acard {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+  transition: transform 0.5s ease-in-out;
+  position: relative;
+}
+
+.Dcard {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+  transition: transform 0.5s ease-in-out;
+  position: relative;
+}
+
+.Fcard {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+  transition: transform 0.5s ease-in-out;
+  position: relative;
+}
+
+.OABcard {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+  transition: transform 0.5s ease-in-out;
+  position: relative;
+}
+
+.Acard-content {
+  text-align: center;
+}
+
+.Dcard-content {
+  text-align: center;
+}
+.Fcard-content {
+  text-align: center;
+}
+
+.OABcard-content {
+  text-align: center;
+}
+
+.Acard h2 {
+  font-size: 1.5em;
+  margin: 0 0 10px;
+}
+
+.Dcard h2 {
+  font-size: 1.5em;
+  margin: 0 0 10px;
+}
+
+.Fcard h2 {
+  font-size: 1.5em;
+  margin: 0 0 10px;
+}
+
+.OABcard h2 {
+  font-size: 1.5em;
+  margin: 0 0 10px;
+}
+
+.Acard p {
+  margin: 5px 0;
+}
+
+.Dcard p {
+  margin: 5px 0;
+}
+
+.FCard p {
+  margin: 5px 0;
+}
+
+.OABCard p {
+  margin: 5px 0;
+}
+
+
+.type {
+  font-weight: bold;
+  color: green;
+}
+
+.notes {
+  font-style: italic;
+  color: #555;
+}
+
+.nav-button {
+  background-color: transparent;
+  border: none;
+  color: #007bff;
+  font-size: 2em;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-button.left {
+  left: -40px;
+}
+
+.nav-button.right {
+  right: -40px;
+}
+
+.nav-button:hover {
+  color: #0056b3;
+}
+
+/* Hide scrollbar for WebKit browsers */
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.shuffle-button,.details-button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 0.5em 0.5em;
+  margin: 2em 0;
+  border-radius: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.shuffle-button:hover {
+  background-color: #0056b3;
+}
+
+.details-button:hover {
+  background-color: #0056b3;
+}
