@@ -9,7 +9,7 @@ import FoodTraining from './FoodTraining';
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/Alchemist-Menu-Training">
       <div className="app">
         <h1>Alchemist Menu Training</h1>
         <nav>
