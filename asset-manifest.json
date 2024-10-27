@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Alchemist-Menu-Training/static/css/main.63a19ddb.css",
+    "main.js": "/Alchemist-Menu-Training/static/js/main.359a557c.js",
+    "index.html": "/Alchemist-Menu-Training/index.html",
+    "main.63a19ddb.css.map": "/Alchemist-Menu-Training/static/css/main.63a19ddb.css.map",
+    "main.359a557c.js.map": "/Alchemist-Menu-Training/static/js/main.359a557c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.63a19ddb.css",
+    "static/js/main.359a557c.js"
+  ]
+}
